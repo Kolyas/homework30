@@ -6,17 +6,22 @@ import android.os.PersistableBundle
 import android.util.Log
 import android.widget.*
 import androidx.activity.viewModels
+import androidx.room.Room
 import com.example.homework2.R
 
 
 class MainActivity : AppCompatActivity() {
-    private val dataModel: DataModel by viewModels()
+    //private val dataModel: DataModel by viewModels()
+    lateinit var database: PostDatabase
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        dataModel.idclick.observe(this,{})
+
+        database = Room.databaseBuilder(this, PostDatabase::class.java, "post")
+            .build()
     }
 
 

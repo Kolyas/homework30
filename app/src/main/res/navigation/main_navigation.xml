@@ -3,24 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/listAnimal">
-
+    app:startDestination="@id/addBase">
     <fragment
-        android:id="@+id/infoAnimal"
-        android:name="com.example.homework2.InfoAnimal"
-        android:label="fragment_info_animal"
-        tools:layout="@layout/fragment_info_animal" >
+        android:id="@+id/viewBase"
+        android:name="com.example.homework2.ViewBase"
+        android:label="fragment_view_base"
+        tools:layout="@layout/fragment_view_base" >
         <action
-            android:id="@+id/action_infoAnimal_to_listAnimal"
-            app:destination="@id/listAnimal" />
+            android:id="@+id/action_viewBase_to_addBase"
+            app:destination="@id/addBase" />
     </fragment>
     <fragment
-        android:id="@+id/listAnimal"
-        android:name="com.example.homework2.ListAnimal"
-        android:label="fragment_list_animal"
-        tools:layout="@layout/fragment_list_animal" >
+        android:id="@+id/addBase"
+        android:name="com.example.homework2.AddBase"
+        android:label="fragment_add_base"
+        tools:layout="@layout/fragment_add_base" >
         <action
-            android:id="@+id/action_listAnimal_to_infoAnimal"
-            app:destination="@id/infoAnimal" />
+            android:id="@+id/action_addBase_to_viewBase"
+            app:destination="@id/viewBase" />
     </fragment>
 </navigation>
