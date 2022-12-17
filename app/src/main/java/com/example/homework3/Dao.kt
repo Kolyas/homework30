@@ -1,4 +1,4 @@
-package com.example.homework2
+package com.example.homework3
 
 import androidx.room.Insert
 import androidx.room.Query

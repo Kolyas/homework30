@@ -1,4 +1,4 @@
-package com.example.homework2
+package com.example.homework3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.*
 import androidx.activity.viewModels
 import androidx.room.Room
-import com.example.homework2.R
+import com.example.homework3.R
 
 
 class MainActivity : AppCompatActivity() {

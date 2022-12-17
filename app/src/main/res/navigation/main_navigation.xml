@@ -6,7 +6,7 @@
     app:startDestination="@id/addBase">
     <fragment
         android:id="@+id/viewBase"
-        android:name="com.example.homework2.ViewBase"
+        android:name="com.example.homework3.ViewBase"
         android:label="fragment_view_base"
         tools:layout="@layout/fragment_view_base" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/addBase"
-        android:name="com.example.homework2.AddBase"
+        android:name="com.example.homework3.AddBase"
         android:label="fragment_add_base"
         tools:layout="@layout/fragment_add_base" >
         <action
